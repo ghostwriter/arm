@@ -25,7 +25,7 @@ final readonly class ConfigurationFactory implements FactoryInterface
     {
         $workspace = $container->get(WorkspaceInterface::class);
 
-        $configFile = $workspace->toString() . '/grm.php';
+        $configFile = $workspace->toString() . '/arm.php';
 
         if (! file_exists($configFile)) {
             throw new RuntimeException(sprintf('Configuration file "%s" does not exist.', $configFile));
