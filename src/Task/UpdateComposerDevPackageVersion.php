@@ -17,7 +17,6 @@ final readonly class UpdateComposerDevPackageVersion implements ComposerDevPacka
     ) {
     }
 
-    #[Override]
     public function __invoke(string $organization, string $repository): void
     {
         $path = sprintf('%s/%s', $organization, $repository);
