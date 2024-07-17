@@ -1,4 +1,4 @@
-# Repository Manager
+# ARM – Automated Repository Manager
 
 [![Compliance](https://github.com/ghostwriter/arm/actions/workflows/compliance.yml/badge.svg)](https://github.com/ghostwriter/arm/actions/workflows/compliance.yml)
 [![Supported PHP Version](https://badgen.net/packagist/php/ghostwriter/arm?color=8892bf)](https://www.php.net/supported-versions)
@@ -9,7 +9,7 @@
 [![Latest Version on Packagist](https://badgen.net/packagist/v/ghostwriter/arm)](https://packagist.org/packages/ghostwriter/arm)
 [![Downloads](https://badgen.net/packagist/dt/ghostwriter/arm?color=blue)](https://packagist.org/packages/ghostwriter/arm)
 
-Seamlessly manage PHP projects with Git, GitHub CLI (gh), and Composer.
+Seamlessly manage multiple `PHP` repositories with `git`, `gh`, and `composer`.
 
 > [!WARNING]
 >
@@ -30,7 +30,11 @@ You can also star (🌟) this repo to find it easier later.
 ## Usage
 
 ```php
-// work in progress
+vendor/bin/arm
+```
+
+```php
+vendor/bin/arm --dry-run
 ```
 
 ### Credits
