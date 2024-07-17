@@ -1,11 +1,19 @@
 {
-    "name": "ghostwriter/wip",
-    "description": "Here be dragons",
+    "name": "ghostwriter/arm",
+    "description": "Automated Repository Manager – PHP tool for managing multiple repositories.",
     "license": "BSD-3-Clause",
     "type": "library",
     "keywords": [
         "ghostwriter",
-        "wip"
+        "arm",
+        "automated-repository-manager",
+        "composer",
+        "git",
+        "gh",
+        "github-actions",
+        "github-cli",
+        "repository-management",
+        "repository-manager"
     ],
     "authors": [
         {
@@ -15,14 +23,14 @@
             "role": "Developer"
         }
     ],
-    "homepage": "https://github.com/ghostwriter/wip",
+    "homepage": "https://github.com/ghostwriter/arm",
     "support": {
-        "issues": "https://github.com/ghostwriter/wip/issues",
-        "forum": "https://github.com/ghostwriter/wip/discussions",
-        "source": "https://github.com/ghostwriter/wip",
-        "docs": "https://github.com/ghostwriter/wip",
-        "rss": "https://github.com/ghostwriter/wip/releases.atom",
-        "security": "https://github.com/ghostwriter/wip/security/advisories/new"
+        "issues": "https://github.com/ghostwriter/arm/issues",
+        "forum": "https://github.com/ghostwriter/arm/discussions",
+        "source": "https://github.com/ghostwriter/arm",
+        "docs": "https://github.com/ghostwriter/arm",
+        "rss": "https://github.com/ghostwriter/arm/releases.atom",
+        "security": "https://github.com/ghostwriter/arm/security/advisories/new"
     },
     "funding": [
         {
@@ -37,8 +45,8 @@
         "ghostwriter/clock": "^3.0.0",
         "ghostwriter/collection": "^2.0.0",
         "ghostwriter/config": "^0.4.1",
-        "ghostwriter/container": "^4.0.1",
-        "ghostwriter/event-dispatcher": "^5.0.1",
+        "ghostwriter/container": "^4.0.2",
+        "ghostwriter/event-dispatcher": "^5.0.2",
         "ghostwriter/json": "^3.0.0",
         "ghostwriter/option": "^1.5.1",
         "ghostwriter/result": "^1.3.0",
@@ -51,12 +59,9 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Ghostwriter\\Wip\\": "src"
+            "Ghostwriter\\Arm\\": "src"
         },
-        "files": [
-            "src/constants.php",
-            "src/functions.php"
-        ]
+        "files": []
     },
     "autoload-dev": {
         "psr-4": {
