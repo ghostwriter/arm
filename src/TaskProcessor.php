@@ -13,7 +13,7 @@ use Override;
 final readonly class TaskProcessor implements TaskProcessorInterface
 {
     public function __construct(
-        private Providers $provider
+        private Providers $providers
     ) {
     }
 
