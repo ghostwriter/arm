@@ -417,9 +417,6 @@
     </UnusedClass>
   </file>
   <file src="src/Task/UpdateComposerDevPackageVersion.php">
-    <InvalidOverride>
-      <code><![CDATA[#[Override]]]></code>
-    </InvalidOverride>
     <MixedArgument>
       <code><![CDATA[$version]]></code>
     </MixedArgument>
@@ -472,7 +469,7 @@
       <code><![CDATA[__construct]]></code>
     </PossiblyUnusedMethod>
     <UnusedProperty>
-      <code><![CDATA[$provider]]></code>
+      <code><![CDATA[$providers]]></code>
     </UnusedProperty>
   </file>
   <file src="src/Workspace.php">
