@@ -1,2 +1,484 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="5.25.0@01a8eb06b9e9cc6cfb6a320bf9fb14331919d505"/>
+<files psalm-version="5.25.0@01a8eb06b9e9cc6cfb6a320bf9fb14331919d505">
+  <file src="src/Configuration.php">
+    <ArgumentTypeCoercion>
+      <code><![CDATA[$owners]]></code>
+      <code><![CDATA[$repositories]]></code>
+      <code><![CDATA[$topics]]></code>
+    </ArgumentTypeCoercion>
+    <InvalidMethodCall>
+      <code><![CDATA[repositories]]></code>
+    </InvalidMethodCall>
+    <MixedArgument>
+      <code><![CDATA[$organization->repositories()]]></code>
+    </MixedArgument>
+    <PossiblyUnusedMethod>
+      <code><![CDATA[new]]></code>
+      <code><![CDATA[owners]]></code>
+      <code><![CDATA[packages]]></code>
+      <code><![CDATA[skip]]></code>
+      <code><![CDATA[skipTopics]]></code>
+      <code><![CDATA[tasks]]></code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/Configuration/ChangeInterface.php">
+    <UnusedClass>
+      <code><![CDATA[ChangeInterface]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Configuration/CommandRunner.php">
+    <MixedArgument>
+      <code><![CDATA[$arguments]]></code>
+      <code><![CDATA[$arguments]]></code>
+      <code><![CDATA[$command]]></code>
+    </MixedArgument>
+    <MixedArgumentTypeCoercion>
+      <code><![CDATA[$repository]]></code>
+    </MixedArgumentTypeCoercion>
+    <MixedAssignment>
+      <code><![CDATA[$arguments]]></code>
+      <code><![CDATA[$command]]></code>
+    </MixedAssignment>
+    <UnusedClass>
+      <code><![CDATA[CommandRunner]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Configuration/ComposerPackageTask.php">
+    <UnusedClass>
+      <code><![CDATA[ComposerPackageTask]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Console/Application.php">
+    <ForbiddenCode>
+      <code><![CDATA[var_dump($class, $task)]]></code>
+      <code><![CDATA[var_dump($repository, $taskListw)]]></code>
+    </ForbiddenCode>
+    <InvalidMethodCall>
+      <code><![CDATA[run]]></code>
+    </InvalidMethodCall>
+    <MissingThrowsDocblock>
+      <code><![CDATA[get]]></code>
+      <code><![CDATA[get]]></code>
+      <code><![CDATA[get]]></code>
+      <code><![CDATA[has]]></code>
+      <code><![CDATA[provide]]></code>
+      <code><![CDATA[provide]]></code>
+      <code><![CDATA[provide]]></code>
+    </MissingThrowsDocblock>
+    <MixedAssignment>
+      <code><![CDATA[$repository]]></code>
+    </MixedAssignment>
+    <PossiblyUnusedMethod>
+      <code><![CDATA[new]]></code>
+      <code><![CDATA[run]]></code>
+    </PossiblyUnusedMethod>
+    <RawObjectIteration>
+      <code><![CDATA[$this->configuration->repositories()]]></code>
+    </RawObjectIteration>
+  </file>
+  <file src="src/Exception/ArmException.php">
+    <UnusedClass>
+      <code><![CDATA[ArmException]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Interface/ActionInterface.php">
+    <UnusedClass>
+      <code><![CDATA[ActionInterface]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Interface/Composer/PackageInterface.php">
+    <UnusedClass>
+      <code><![CDATA[PackageInterface]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Interface/Composer/VersionConstraintInterface.php">
+    <UnusedClass>
+      <code><![CDATA[VersionConstraintInterface]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Interface/Composer/VersionConstraintSetInterface.php">
+    <UnusedClass>
+      <code><![CDATA[VersionConstraintSetInterface]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Interface/Composer/VersionInterface.php">
+    <PossiblyUnusedMethod>
+      <code><![CDATA[build]]></code>
+      <code><![CDATA[major]]></code>
+      <code><![CDATA[minor]]></code>
+      <code><![CDATA[patch]]></code>
+      <code><![CDATA[preRelease]]></code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/Interface/ComposerInterface.php">
+    <PossiblyUnusedMethod>
+      <code><![CDATA[new]]></code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/Interface/Exception/InvalidArgumentExceptionInterface.php">
+    <UnusedClass>
+      <code><![CDATA[InvalidArgumentExceptionInterface]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Interface/Git/BranchInterface.php">
+    <PossiblyUnusedMethod>
+      <code><![CDATA[checkout]]></code>
+      <code><![CDATA[create]]></code>
+      <code><![CDATA[delete]]></code>
+      <code><![CDATA[exists]]></code>
+      <code><![CDATA[get]]></code>
+      <code><![CDATA[list]]></code>
+      <code><![CDATA[new]]></code>
+      <code><![CDATA[repository]]></code>
+      <code><![CDATA[set]]></code>
+    </PossiblyUnusedMethod>
+    <UndefinedClass>
+      <code><![CDATA[RepositoryInterface]]></code>
+    </UndefinedClass>
+  </file>
+  <file src="src/Interface/Git/Commit/Author/EmailInterface.php">
+    <PossiblyUnusedMethod>
+      <code><![CDATA[new]]></code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/Interface/Git/Commit/Author/NameInterface.php">
+    <PossiblyUnusedMethod>
+      <code><![CDATA[new]]></code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/Interface/Git/Commit/AuthorInterface.php">
+    <PossiblyUnusedMethod>
+      <code><![CDATA[email]]></code>
+      <code><![CDATA[name]]></code>
+      <code><![CDATA[new]]></code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/Interface/Git/Commit/MessageInterface.php">
+    <PossiblyUnusedMethod>
+      <code><![CDATA[new]]></code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/Interface/Git/CommitInterface.php">
+    <PossiblyUnusedMethod>
+      <code><![CDATA[author]]></code>
+      <code><![CDATA[branch]]></code>
+      <code><![CDATA[message]]></code>
+      <code><![CDATA[new]]></code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/Interface/Git/GitInterface.php">
+    <PossiblyUnusedMethod>
+      <code><![CDATA[clone]]></code>
+      <code><![CDATA[commit]]></code>
+      <code><![CDATA[delete]]></code>
+      <code><![CDATA[exists]]></code>
+      <code><![CDATA[get]]></code>
+      <code><![CDATA[list]]></code>
+      <code><![CDATA[new]]></code>
+      <code><![CDATA[set]]></code>
+    </PossiblyUnusedMethod>
+    <UndefinedClass>
+      <code><![CDATA[RepositoryInterface]]></code>
+      <code><![CDATA[RepositoryInterface]]></code>
+    </UndefinedClass>
+  </file>
+  <file src="src/Interface/Git/WorkingDirectoryInterface.php">
+    <PossiblyUnusedMethod>
+      <code><![CDATA[new]]></code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/Interface/GitHub/Branch/BaseBranchInterface.php">
+    <UnusedClass>
+      <code><![CDATA[BaseBranchInterface]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Interface/GitHub/Branch/DefaultBranchInterface.php">
+    <UnusedClass>
+      <code><![CDATA[DefaultBranchInterface]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Interface/GitHub/Branch/HeadBranchInterface.php">
+    <UnusedClass>
+      <code><![CDATA[HeadBranchInterface]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Interface/GitHub/IssueInterface.php">
+    <UnusedClass>
+      <code><![CDATA[IssueInterface]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Interface/GitHub/LabelInterface.php">
+    <UnusedClass>
+      <code><![CDATA[LabelInterface]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Interface/GitHub/MilestoneInterface.php">
+    <UnusedClass>
+      <code><![CDATA[MilestoneInterface]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Interface/GitHub/Owner/OrganizationInterface.php">
+    <UnusedClass>
+      <code><![CDATA[OrganizationInterface]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Interface/GitHub/Owner/UserInterface.php">
+    <UnusedClass>
+      <code><![CDATA[UserInterface]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Interface/GitHub/OwnerInterface.php">
+    <PossiblyUnusedMethod>
+      <code><![CDATA[repositories]]></code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/Interface/GitHub/PullRequest/BodyInterface.php">
+    <UnusedClass>
+      <code><![CDATA[BodyInterface]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Interface/GitHub/PullRequest/TitleInterface.php">
+    <UnusedClass>
+      <code><![CDATA[TitleInterface]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Interface/GitHub/PullRequestInterface.php">
+    <DuplicateMethod>
+      <code><![CDATA[public function create(): void;]]></code>
+      <code><![CDATA[public function create(string $pullRequest): string;]]></code>
+      <code><![CDATA[public function delete(): void;]]></code>
+      <code><![CDATA[public function delete(string $pullRequest): string;]]></code>
+      <code><![CDATA[public function exists(string $pullRequest): bool;]]></code>
+      <code><![CDATA[public function get(string $pullRequest): string;]]></code>
+      <code><![CDATA[public function list(): array;]]></code>
+      <code><![CDATA[public function set(string $pullRequest): string;]]></code>
+    </DuplicateMethod>
+    <UnusedClass>
+      <code><![CDATA[PullRequestInterface]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Interface/GitHub/ReleaseInterface.php">
+    <UnusedClass>
+      <code><![CDATA[ReleaseInterface]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Interface/GitHub/TagInterface.php">
+    <UnusedClass>
+      <code><![CDATA[TagInterface]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Interface/GitHubCli/NameInterface.php">
+    <UnusedClass>
+      <code><![CDATA[NameInterface]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Interface/GitHubCli/RepositoryInterface.php">
+    <UnusedClass>
+      <code><![CDATA[RepositoryInterface]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Interface/GitHubCli/TagInterface.php">
+    <UndefinedClass>
+      <code><![CDATA[NameInterface]]></code>
+    </UndefinedClass>
+    <UnusedClass>
+      <code><![CDATA[TagInterface]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Interface/GitHubCli/UrlInterface.php">
+    <UnusedClass>
+      <code><![CDATA[UrlInterface]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Interface/GitHubCli/VisibilityInterface.php">
+    <UnusedClass>
+      <code><![CDATA[VisibilityInterface]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Interface/GitHubInterface.php">
+    <PossiblyUnusedMethod>
+      <code><![CDATA[repository]]></code>
+    </PossiblyUnusedMethod>
+    <UndefinedClass>
+      <code><![CDATA[RepositoryInterface]]></code>
+    </UndefinedClass>
+  </file>
+  <file src="src/Interface/GitInterface.php">
+    <PossiblyUnusedMethod>
+      <code><![CDATA[new]]></code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/Interface/ProjectInterface.php">
+    <UnusedClass>
+      <code><![CDATA[ProjectInterface]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Interface/RepositoryInterface.php">
+    <PossiblyUnusedMethod>
+      <code><![CDATA[clone]]></code>
+      <code><![CDATA[create]]></code>
+      <code><![CDATA[delete]]></code>
+      <code><![CDATA[exists]]></code>
+      <code><![CDATA[get]]></code>
+      <code><![CDATA[list]]></code>
+      <code><![CDATA[set]]></code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/Interface/StepInterface.php">
+    <UnusedClass>
+      <code><![CDATA[StepInterface]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Interface/Task/ComposerTaskInterface.php">
+    <PossiblyUnusedMethod>
+      <code><![CDATA[packages]]></code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/Interface/Task/Git/GitCloneTaskInterface.php">
+    <UnusedClass>
+      <code><![CDATA[GitCloneTaskInterface]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Interface/Task/GitHubCliTaskInterface.php">
+    <UnusedClass>
+      <code><![CDATA[GitHubCliTaskInterface]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Interface/TaskProcessorInterface.php">
+    <PossiblyUnusedMethod>
+      <code><![CDATA[process]]></code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/Interface/WorkerInterface.php">
+    <UnusedClass>
+      <code><![CDATA[WorkerInterface]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Service/Extension/GitHubManagerExtension.php">
+    <InvalidReturnStatement>
+      <code><![CDATA[$service]]></code>
+    </InvalidReturnStatement>
+    <InvalidReturnType>
+      <code><![CDATA[object]]></code>
+    </InvalidReturnType>
+    <MissingTemplateParam>
+      <code><![CDATA[ExtensionInterface]]></code>
+    </MissingTemplateParam>
+    <UnusedClass>
+      <code><![CDATA[GitHubManagerExtension]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Service/Factory/ApplicationFactory.php">
+    <MissingTemplateParam>
+      <code><![CDATA[FactoryInterface]]></code>
+    </MissingTemplateParam>
+    <MissingThrowsDocblock>
+      <code><![CDATA[get]]></code>
+      <code><![CDATA[get]]></code>
+    </MissingThrowsDocblock>
+    <PossiblyNullArgument>
+      <code><![CDATA[InstalledVersions::getPrettyVersion(self::PACKAGE)]]></code>
+    </PossiblyNullArgument>
+  </file>
+  <file src="src/Service/Factory/ConfigurationFactory.php">
+    <MissingTemplateParam>
+      <code><![CDATA[FactoryInterface]]></code>
+    </MissingTemplateParam>
+    <MixedInferredReturnType>
+      <code><![CDATA[Configuration]]></code>
+    </MixedInferredReturnType>
+    <MixedReturnStatement>
+      <code><![CDATA[require $configFile]]></code>
+    </MixedReturnStatement>
+  </file>
+  <file src="src/Service/Factory/WorkspaceFactory.php">
+    <MissingTemplateParam>
+      <code><![CDATA[FactoryInterface]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/Task/AddToGitIgnore.php">
+    <UnusedClass>
+      <code><![CDATA[AddToGitIgnore]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Task/RemoveDirectory.php">
+    <UnusedClass>
+      <code><![CDATA[RemoveDirectory]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Task/RemoveFile.php">
+    <UnusedClass>
+      <code><![CDATA[RemoveFile]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Task/ReplaceInFile.php">
+    <UnusedClass>
+      <code><![CDATA[ReplaceInFile]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Task/UpdateComposerDevPackageVersion.php">
+    <InvalidOverride>
+      <code><![CDATA[#[Override]]]></code>
+    </InvalidOverride>
+    <MixedArgument>
+      <code><![CDATA[$version]]></code>
+    </MixedArgument>
+    <MixedArgumentTypeCoercion>
+      <code><![CDATA[$package]]></code>
+    </MixedArgumentTypeCoercion>
+    <MixedAssignment>
+      <code><![CDATA[$version]]></code>
+    </MixedAssignment>
+    <MixedMethodCall>
+      <code><![CDATA[mustRun]]></code>
+    </MixedMethodCall>
+    <UndefinedClass>
+      <code><![CDATA[Process]]></code>
+    </UndefinedClass>
+    <UnusedClass>
+      <code><![CDATA[UpdateComposerDevPackageVersion]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Task/UpdateComposerPackageVersion.php">
+    <InvalidOverride>
+      <code><![CDATA[#[Override]]]></code>
+    </InvalidOverride>
+    <MixedArgument>
+      <code><![CDATA[$version]]></code>
+    </MixedArgument>
+    <MixedArgumentTypeCoercion>
+      <code><![CDATA[$package]]></code>
+    </MixedArgumentTypeCoercion>
+    <MixedAssignment>
+      <code><![CDATA[$version]]></code>
+    </MixedAssignment>
+    <MixedMethodCall>
+      <code><![CDATA[mustRun]]></code>
+    </MixedMethodCall>
+    <UndefinedClass>
+      <code><![CDATA[Process]]></code>
+    </UndefinedClass>
+    <UnusedClass>
+      <code><![CDATA[UpdateComposerPackageVersion]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Task/UpdateNpmPackageVersion.php">
+    <UnusedClass>
+      <code><![CDATA[UpdateNpmPackageVersion]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/TaskProcessor.php">
+    <PossiblyUnusedMethod>
+      <code><![CDATA[__construct]]></code>
+    </PossiblyUnusedMethod>
+    <UnusedProperty>
+      <code><![CDATA[$provider]]></code>
+    </UnusedProperty>
+  </file>
+  <file src="src/Workspace.php">
+    <MissingThrowsDocblock>
+      <code><![CDATA[throw new InvalidArgumentException('Workspace cannot be empty');]]></code>
+      <code><![CDATA[throw new InvalidArgumentException('Workspace must be a directory');]]></code>
+    </MissingThrowsDocblock>
+  </file>
+</files>
