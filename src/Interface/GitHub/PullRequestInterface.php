@@ -12,6 +12,19 @@ use Ghostwriter\Arm\Interface\RepositoryInterface;
 
 interface PullRequestInterface
 {
+    /**
+     * @param LabelInterface $labels
+     */
+    public static function new(
+        OwnerInterface $owner,
+        RepositoryInterface $interfaceRepository,
+        BaseBranchInterface $baseBranch,
+        HeadBranchInterface $headBranch,
+        TitleInterface $title,
+        BodyInterface $body,
+        array $labels = []
+    ): void;
+
     public function baseBranch(): BaseBranchInterface;
 
     public function body(): BodyInterface;
@@ -55,17 +68,4 @@ interface PullRequestInterface
     public function title(): TitleInterface;
 
     public function update(TitleInterface $title, BodyInterface $body, array $labels = []): void;
-
-    /**
-     * @param LabelInterface $labels
-     */
-    public static function new(
-        OwnerInterface $owner,
-        RepositoryInterface $interfaceRepository,
-        BaseBranchInterface $baseBranch,
-        HeadBranchInterface $headBranch,
-        TitleInterface $title,
-        BodyInterface $body,
-        array $labels = []
-    ): void;
 }
