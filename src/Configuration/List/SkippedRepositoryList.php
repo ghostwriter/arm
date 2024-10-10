@@ -14,6 +14,11 @@ final class SkippedRepositoryList implements ArrayableInterface
     ) {
     }
 
+    public static function new(): self
+    {
+        return new self();
+    }
+
     public function add(string ...$skipped): self
     {
         foreach ($skipped as $skip) {
@@ -27,10 +32,5 @@ final class SkippedRepositoryList implements ArrayableInterface
     public function toArray(): array
     {
         return $this->skipped;
-    }
-
-    public static function new(): self
-    {
-        return new self();
     }
 }
