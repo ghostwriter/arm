@@ -18,6 +18,11 @@ final class RepositoryList implements ArrayableInterface
     ) {
     }
 
+    public static function new(): self
+    {
+        return new self();
+    }
+
     /**
      * @param class-string<RepositoryInterface> ...$repositories
      *
@@ -39,10 +44,5 @@ final class RepositoryList implements ArrayableInterface
     public function toArray(): array
     {
         return $this->repositories;
-    }
-
-    public static function new(): self
-    {
-        return new self();
     }
 }
