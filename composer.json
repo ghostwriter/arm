@@ -45,8 +45,9 @@
         "ghostwriter/clock": "^3.0.0",
         "ghostwriter/collection": "^2.0.0",
         "ghostwriter/config": "^0.4.1",
-        "ghostwriter/container": "^4.0.2",
+        "ghostwriter/container": "^4.0.3",
         "ghostwriter/event-dispatcher": "^5.0.2",
+        "ghostwriter/filesystem": "^0.1.0",
         "ghostwriter/json": "^3.0.0",
         "ghostwriter/option": "^1.5.1",
         "ghostwriter/result": "^1.3.0",
@@ -59,7 +60,7 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Ghostwriter\\Arm\\": "src"
+            "Ghostwriter\\AutomatedRepositoryManager\\": "src"
         },
         "files": []
     },
@@ -122,6 +123,7 @@
         "psalm:shepherd": "@psalm --no-diff --shepherd --stats",
         "psalm:update": "@psalm --no-diff --update-baseline=psalm-baseline.xml",
         "rector": "@bin_rector",
+        "rector:dry-run": "@rector --dry-run",
         "test": [
             "@phpunit",
             "@psalm:shepherd",
