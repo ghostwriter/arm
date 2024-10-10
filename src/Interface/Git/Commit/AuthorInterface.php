@@ -9,9 +9,9 @@ use Ghostwriter\Arm\Interface\Git\Commit\Author\NameInterface;
 
 interface AuthorInterface
 {
+    public static function new(string $name, string $email): self;
+
     public function email(): EmailInterface;
 
     public function name(): NameInterface;
-
-    public static function new(string $name, string $email): self;
 }
