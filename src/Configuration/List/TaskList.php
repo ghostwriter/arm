@@ -8,8 +8,6 @@ use Ghostwriter\Arm\Interface\ArrayableInterface;
 use Ghostwriter\Arm\Interface\TaskInterface;
 use Override;
 
-use function array_merge;
-
 final class TaskList implements ArrayableInterface
 {
     /**
@@ -20,6 +18,11 @@ final class TaskList implements ArrayableInterface
     ) {
     }
 
+    public static function new(): self
+    {
+        return new self();
+    }
+
     /**
      * @param array<class-string<TaskInterface>,array<string,array<string,string>|string>> $tasks
      *
@@ -27,7 +30,7 @@ final class TaskList implements ArrayableInterface
      */
     public function add(array $tasks): self
     {
-        $this->tasks = array_merge($this->tasks, $tasks);
+        $this->tasks = \array_merge($this->tasks, $tasks);
 
         return $this;
     }
@@ -39,10 +42,5 @@ final class TaskList implements ArrayableInterface
     public function toArray(): array
     {
         return $this->tasks;
-    }
-
-    public static function new(): self
-    {
-        return new self();
     }
 }
