@@ -18,6 +18,11 @@ final class SkippedTopicList implements ArrayableInterface
     ) {
     }
 
+    public static function new(): self
+    {
+        return new self();
+    }
+
     /**
      * @param class-string<TopicInterface> ...$topics
      *
@@ -39,10 +44,5 @@ final class SkippedTopicList implements ArrayableInterface
     public function toArray(): array
     {
         return $this->topics;
-    }
-
-    public static function new(): self
-    {
-        return new self();
     }
 }
