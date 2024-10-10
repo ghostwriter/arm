@@ -9,6 +9,8 @@ use Ghostwriter\Arm\Tool\GitHubCli\RepositoryInterface;
 
 interface GitInterface
 {
+    public static function new(WorkingDirectoryInterface $workingDirectory): self;
+
     public function clone(RepositoryInterface $gitHubCliRepository): void;
 
     public function commit(
@@ -27,6 +29,4 @@ interface GitInterface
     public function list(): array;
 
     public function set(string $commit): string;
-
-    public static function new(WorkingDirectoryInterface $workingDirectory): self;
 }
