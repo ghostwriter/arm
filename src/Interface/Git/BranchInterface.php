@@ -9,6 +9,8 @@ use Ghostwriter\Arm\Tool\GitHubCli\RepositoryInterface;
 
 interface BranchInterface extends StringableInterface
 {
+    public static function new(string $branch): self;
+
     public function checkout(string $branch): string;
 
     public function create(string $branch): string;
@@ -24,6 +26,4 @@ interface BranchInterface extends StringableInterface
     public function repository(): RepositoryInterface;
 
     public function set(string $branch): string;
-
-    public static function new(string $branch): self;
 }
