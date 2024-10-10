@@ -8,8 +8,6 @@ use Ghostwriter\Arm\Configuration\Process;
 use Ghostwriter\Arm\Interface\Task\Composer\ComposerPackageTaskInterface;
 use Override;
 
-use function sprintf;
-
 final readonly class UpdateComposerPackageVersion implements ComposerPackageTaskInterface
 {
     public function __construct(
@@ -20,7 +18,7 @@ final readonly class UpdateComposerPackageVersion implements ComposerPackageTask
     #[Override]
     public function __invoke(string $organization, string $repository): void
     {
-        $path = sprintf('%s/%s', $organization, $repository);
+        $path = \sprintf('%s/%s', $organization, $repository);
 
         foreach ($this->packages as $package => $version) {
             $this->update($package, $version, $path);
@@ -35,6 +33,6 @@ final readonly class UpdateComposerPackageVersion implements ComposerPackageTask
 
     private function update(string $package, string $path, string $version): void
     {
-        (new Process(['composer', 'require', sprintf('%s:%s', $package, $version)], $path))->mustRun();
+        (new Process(['composer', 'require', \sprintf('%s:%s', $package, $version)], $path))->mustRun();
     }
 }
