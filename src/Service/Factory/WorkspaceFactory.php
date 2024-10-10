@@ -11,9 +11,6 @@ use Ghostwriter\Container\Interface\FactoryInterface;
 use Override;
 use Throwable;
 
-use function getcwd;
-use function sys_get_temp_dir;
-
 final readonly class WorkspaceFactory implements FactoryInterface
 {
     /**
@@ -22,6 +19,6 @@ final readonly class WorkspaceFactory implements FactoryInterface
     #[Override]
     public function __invoke(ContainerInterface $container): WorkspaceInterface
     {
-        return Workspace::new(getcwd() ?: sys_get_temp_dir());
+        return Workspace::new(\getcwd() ?: \sys_get_temp_dir());
     }
 }
