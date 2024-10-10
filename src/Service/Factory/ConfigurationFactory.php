@@ -12,9 +12,6 @@ use Override;
 use RuntimeException;
 use Throwable;
 
-use function file_exists;
-use function sprintf;
-
 final readonly class ConfigurationFactory implements FactoryInterface
 {
     /**
@@ -27,8 +24,8 @@ final readonly class ConfigurationFactory implements FactoryInterface
 
         $configFile = $workspace->toString() . '/arm.php';
 
-        if (! file_exists($configFile)) {
-            throw new RuntimeException(sprintf('Configuration file "%s" does not exist.', $configFile));
+        if (! \file_exists($configFile)) {
+            throw new RuntimeException(\sprintf('Configuration file "%s" does not exist.', $configFile));
         }
 
         return require $configFile;
