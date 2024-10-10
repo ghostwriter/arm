@@ -18,6 +18,11 @@ final class OwnerList implements ArrayableInterface
     ) {
     }
 
+    public static function new(): self
+    {
+        return new self();
+    }
+
     /**
      * @param class-string<OwnerInterface> ...$owners
      *
@@ -39,10 +44,5 @@ final class OwnerList implements ArrayableInterface
     public function toArray(): array
     {
         return $this->owners;
-    }
-
-    public static function new(): self
-    {
-        return new self();
     }
 }
