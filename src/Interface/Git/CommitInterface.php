@@ -10,13 +10,13 @@ use Ghostwriter\Arm\Interface\StringableInterface;
 
 interface CommitInterface extends StringableInterface
 {
+    public static function new(AuthorInterface $author, BranchInterface $branch, MessageInterface $message): self;
+
     public function author(): AuthorInterface;
 
     public function branch(): BranchInterface;
 
     public function message(): MessageInterface;
-
-    public static function new(AuthorInterface $author, BranchInterface $branch, MessageInterface $message): self;
 }
 
 //    public function commit(string $commit): string;
