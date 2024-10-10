@@ -15,14 +15,14 @@ final readonly class WorkingDirectory implements WorkingDirectoryInterface
     }
 
     #[Override]
-    public function toString(): string
-    {
-        return $this->workingDirectory;
-    }
-
-    #[Override]
     public static function new(string $workingDirectory): self
     {
         return new self($workingDirectory);
+    }
+
+    #[Override]
+    public function toString(): string
+    {
+        return $this->workingDirectory;
     }
 }
