@@ -7,8 +7,6 @@ namespace Ghostwriter\Arm\Configuration;
 use Ghostwriter\Shell\Interface\ShellInterface;
 use RuntimeException;
 
-use function array_shift;
-
 final readonly class CommandRunner
 {
     public function __construct(
@@ -20,7 +18,7 @@ final readonly class CommandRunner
     public function run(): void
     {
         foreach ($this->repositories as $repository => $arguments) {
-            $command = array_shift($arguments);
+            $command = \array_shift($arguments);
 
             $result = $this->shell->execute($command, $arguments, $repository);
 
