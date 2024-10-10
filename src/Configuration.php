@@ -12,11 +12,6 @@ use Ghostwriter\Arm\Configuration\List\TaskList;
 use Ghostwriter\Arm\Interface\TaskInterface;
 use Ghostwriter\Arm\Interface\WorkspaceInterface;
 
-use function array_diff;
-use function array_merge;
-use function getcwd;
-use function sys_get_temp_dir;
-
 final readonly class Configuration
 {
     public function __construct(
@@ -27,6 +22,23 @@ final readonly class Configuration
         private TaskList $taskList,
         private WorkspaceInterface $workspace,
     ) {
+    }
+
+    public static function new(?string $workingDirectory = null): self
+    {
+        $workingDirectory = match ($workingDirectory) {
+            null => \getcwd() ?: \sys_get_temp_dir(),
+            default => $workingDirectory,
+        };
+
+        return new self(
+            OwnerList::new(),
+            RepositoryList::new(),
+            SkippedRepositoryList::new(),
+            SkippedTopicList::new(),
+            TaskList::new(),
+            Workspace::new($workingDirectory),
+        );
     }
 
     public function owners(string ...$owners): self
@@ -41,10 +53,10 @@ final readonly class Configuration
         $repositories = $this->repositoryList->toArray();
 
         foreach ($this->ownerList->toArray() as $organization) {
-            $repositories = array_merge($repositories, $organization->repositories());
+            $repositories = \array_merge($repositories, $organization->repositories());
         }
 
-        return array_diff($repositories, $this->skippedRepositoryList->toArray());
+        return \array_diff($repositories, $this->skippedRepositoryList->toArray());
     }
 
     public function repositories(string ...$repositories): self
@@ -93,22 +105,5 @@ final readonly class Configuration
     public function workspace(): WorkspaceInterface
     {
         return $this->workspace;
-    }
-
-    public static function new(?string $workingDirectory = null): self
-    {
-        $workingDirectory = match ($workingDirectory) {
-            null => getcwd() ?: sys_get_temp_dir(),
-            default => $workingDirectory,
-        };
-
-        return new self(
-            OwnerList::new(),
-            RepositoryList::new(),
-            SkippedRepositoryList::new(),
-            SkippedTopicList::new(),
-            TaskList::new(),
-            Workspace::new($workingDirectory),
-        );
     }
 }
