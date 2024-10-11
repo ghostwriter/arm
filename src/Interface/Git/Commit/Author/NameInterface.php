@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Arm\Interface\Git\Commit\Author;
+namespace Ghostwriter\AutomatedRepositoryManager\Interface\Git\Commit\Author;
 
-use Ghostwriter\Arm\Interface\StringableInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\StringableInterface;
 
 interface NameInterface extends StringableInterface
 {
