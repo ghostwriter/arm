@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Arm\Interface\Git\Commit;
+namespace Ghostwriter\AutomatedRepositoryManager\Interface\Git\Commit;
 
-use Ghostwriter\Arm\Interface\Git\Commit\Author\EmailInterface;
-use Ghostwriter\Arm\Interface\Git\Commit\Author\NameInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\Git\Commit\Author\EmailInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\Git\Commit\Author\NameInterface;
 
 interface AuthorInterface
 {
