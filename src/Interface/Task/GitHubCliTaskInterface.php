@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Arm\Interface\Task;
+namespace Ghostwriter\AutomatedRepositoryManager\Interface\Task;
 
-use Ghostwriter\Arm\Interface\TaskInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\TaskInterface;
 
 interface GitHubCliTaskInterface extends TaskInterface
 {
