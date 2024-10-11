@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Arm\Service\Factory;
+namespace Ghostwriter\AutomatedRepositoryManager\Service\Factory;
 
 use Composer\InstalledVersions;
-use Ghostwriter\Arm\Configuration;
-use Ghostwriter\Arm\Console\Application;
+use Ghostwriter\AutomatedRepositoryManager\Configuration;
+use Ghostwriter\AutomatedRepositoryManager\Console\Application;
 use Ghostwriter\Container\Interface\ContainerInterface;
 use Ghostwriter\Container\Interface\FactoryInterface;
 use Override;
