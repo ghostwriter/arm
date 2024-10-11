@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="5.26.1@d747f6500b38ac4f7dfc5edbcae6e4b637d7add0">
+<files psalm-version="dev-master@03ee02ce6b43d1c7e52b9bb3ea0b49bfd02b08d0">
   <file src="src/Configuration.php">
     <ArgumentTypeCoercion>
       <code><![CDATA[$owners]]></code>
@@ -75,6 +75,15 @@
     <RawObjectIteration>
       <code><![CDATA[$this->configuration->repositories()]]></code>
     </RawObjectIteration>
+    <UnusedVariable>
+      <code><![CDATA[$arguments]]></code>
+      <code><![CDATA[$command]]></code>
+    </UnusedVariable>
+  </file>
+  <file src="src/Console/CliParser.php">
+    <MixedAssignment>
+      <code><![CDATA[$command]]></code>
+    </MixedAssignment>
   </file>
   <file src="src/Exception/ArmException.php">
     <UnusedClass>
@@ -177,10 +186,6 @@
       <code><![CDATA[new]]></code>
       <code><![CDATA[set]]></code>
     </PossiblyUnusedMethod>
-    <UndefinedClass>
-      <code><![CDATA[RepositoryInterface]]></code>
-      <code><![CDATA[RepositoryInterface]]></code>
-    </UndefinedClass>
   </file>
   <file src="src/Interface/Git/WorkingDirectoryInterface.php">
     <PossiblyUnusedMethod>
@@ -267,20 +272,12 @@
       <code><![CDATA[TagInterface]]></code>
     </UnusedClass>
   </file>
-  <file src="src/Interface/GitHubCli/NameInterface.php">
-    <UnusedClass>
-      <code><![CDATA[NameInterface]]></code>
-    </UnusedClass>
-  </file>
   <file src="src/Interface/GitHubCli/RepositoryInterface.php">
     <UnusedClass>
       <code><![CDATA[RepositoryInterface]]></code>
     </UnusedClass>
   </file>
   <file src="src/Interface/GitHubCli/TagInterface.php">
-    <UndefinedClass>
-      <code><![CDATA[NameInterface]]></code>
-    </UndefinedClass>
     <UnusedClass>
       <code><![CDATA[TagInterface]]></code>
     </UnusedClass>
@@ -384,9 +381,6 @@
     <MissingTemplateParam>
       <code><![CDATA[FactoryInterface]]></code>
     </MissingTemplateParam>
-    <MixedInferredReturnType>
-      <code><![CDATA[Configuration]]></code>
-    </MixedInferredReturnType>
     <MixedReturnStatement>
       <code><![CDATA[require $configFile]]></code>
     </MixedReturnStatement>
@@ -417,6 +411,10 @@
     </UnusedClass>
   </file>
   <file src="src/Task/UpdateComposerDevPackageVersion.php">
+    <MissingThrowsDocblock>
+      <code><![CDATA[mustRun]]></code>
+      <code><![CDATA[new Process(['composer', 'require', '--dev', \sprintf('%s:%s', $package, $version)], $path)]]></code>
+    </MissingThrowsDocblock>
     <MixedArgument>
       <code><![CDATA[$version]]></code>
     </MixedArgument>
@@ -426,12 +424,6 @@
     <MixedAssignment>
       <code><![CDATA[$version]]></code>
     </MixedAssignment>
-    <MixedMethodCall>
-      <code><![CDATA[mustRun]]></code>
-    </MixedMethodCall>
-    <UndefinedClass>
-      <code><![CDATA[Process]]></code>
-    </UndefinedClass>
     <UnusedClass>
       <code><![CDATA[UpdateComposerDevPackageVersion]]></code>
     </UnusedClass>
@@ -474,8 +466,8 @@
   </file>
   <file src="src/Workspace.php">
     <MissingThrowsDocblock>
-      <code><![CDATA[throw new InvalidArgumentException('Workspace cannot be empty');]]></code>
-      <code><![CDATA[throw new InvalidArgumentException('Workspace must be a directory');]]></code>
+      <code><![CDATA[throw new InvalidArgumentException('Workspace cannot be empty')]]></code>
+      <code><![CDATA[throw new InvalidArgumentException('Workspace must be a directory')]]></code>
     </MissingThrowsDocblock>
   </file>
 </files>
