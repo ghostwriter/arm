@@ -3,7 +3,8 @@
 
 declare(strict_types=1);
 
-use Ghostwriter\Arm\Console\Application;
+use Ghostwriter\AutomatedRepositoryManager\AutomatedRepositoryManager;
+use Ghostwriter\Cli\Application;
 
 use const STDERR;
 
@@ -21,5 +22,5 @@ use const STDERR;
     require $composerAutoloadPath;
 
     /** #BlackLivesMatter */
-    Application::new()->run();
+    Application::new(AutomatedRepositoryManager::class)->run($_SERVER['argv']);
 })($_composer_autoload_path ?? \dirname(__DIR__) . '/vendor/autoload.php');
