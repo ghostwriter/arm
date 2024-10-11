@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Arm;
+namespace Ghostwriter\AutomatedRepositoryManager;
 
-use Ghostwriter\Arm\Configuration\List\OwnerList;
-use Ghostwriter\Arm\Configuration\List\RepositoryList;
-use Ghostwriter\Arm\Configuration\List\SkippedRepositoryList;
-use Ghostwriter\Arm\Configuration\List\SkippedTopicList;
-use Ghostwriter\Arm\Configuration\List\TaskList;
-use Ghostwriter\Arm\Interface\TaskInterface;
-use Ghostwriter\Arm\Interface\WorkspaceInterface;
+use Ghostwriter\AutomatedRepositoryManager\Configuration\List\OwnerList;
+use Ghostwriter\AutomatedRepositoryManager\Configuration\List\RepositoryList;
+use Ghostwriter\AutomatedRepositoryManager\Configuration\List\SkippedRepositoryList;
+use Ghostwriter\AutomatedRepositoryManager\Configuration\List\SkippedTopicList;
+use Ghostwriter\AutomatedRepositoryManager\Configuration\List\TaskList;
+use Ghostwriter\AutomatedRepositoryManager\Interface\TaskInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\WorkspaceInterface;
 
 final readonly class Configuration
 {
