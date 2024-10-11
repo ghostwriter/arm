@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Arm\Configuration;
+namespace Ghostwriter\AutomatedRepositoryManager\Configuration;
 
-use Ghostwriter\Arm\Interface\TaskInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\TaskInterface;
 
 abstract class ComposerPackageTask implements TaskInterface
 {
