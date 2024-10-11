@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Arm\Interface\Composer;
+namespace Ghostwriter\AutomatedRepositoryManager\Interface\Composer;
 
-use Ghostwriter\Arm\Interface\Composer\Version\BuildInterface;
-use Ghostwriter\Arm\Interface\Composer\Version\MajorInterface;
-use Ghostwriter\Arm\Interface\Composer\Version\MinorInterface;
-use Ghostwriter\Arm\Interface\Composer\Version\PatchInterface;
-use Ghostwriter\Arm\Interface\Composer\Version\PreReleaseInterface;
-use Ghostwriter\Arm\Interface\StringableInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\Composer\Version\BuildInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\Composer\Version\MajorInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\Composer\Version\MinorInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\Composer\Version\PatchInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\Composer\Version\PreReleaseInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\StringableInterface;
 
 interface VersionInterface extends StringableInterface
 {
