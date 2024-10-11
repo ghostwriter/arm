@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Arm\Interface\GitHub;
+namespace Ghostwriter\AutomatedRepositoryManager\Interface\GitHub;
 
 interface MilestoneInterface
 {
