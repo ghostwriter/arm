@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Arm\Exception;
+namespace Ghostwriter\AutomatedRepositoryManager\Exception;
 
-use Ghostwriter\Arm\Interface\ExceptionInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\ExceptionInterface;
 use RuntimeException;
 
 final class ArmException extends RuntimeException implements ExceptionInterface
