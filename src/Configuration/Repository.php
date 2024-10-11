@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Arm\Configuration;
+namespace Ghostwriter\AutomatedRepositoryManager\Configuration;
 
-use Ghostwriter\Arm\Interface\ArrayableInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\ArrayableInterface;
 use Override;
 
 final class Repository implements ArrayableInterface
