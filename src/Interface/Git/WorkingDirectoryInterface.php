@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Arm\Interface\Git;
+namespace Ghostwriter\AutomatedRepositoryManager\Interface\Git;
 
-use Ghostwriter\Arm\Interface\StringableInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\StringableInterface;
 
 interface WorkingDirectoryInterface extends StringableInterface
 {
