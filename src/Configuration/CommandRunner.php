@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Arm\Configuration;
+namespace Ghostwriter\AutomatedRepositoryManager\Configuration;
 
 use Ghostwriter\Shell\Interface\ShellInterface;
 use RuntimeException;
