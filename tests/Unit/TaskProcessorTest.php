@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Tests\Unit;
 
 use Generator;
-use Ghostwriter\Arm\TaskProcessor;
+use Ghostwriter\AutomatedRepositoryManager\TaskProcessor;
 use Ghostwriter\Container\Container;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
