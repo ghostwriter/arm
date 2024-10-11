@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Arm;
+namespace Ghostwriter\AutomatedRepositoryManager;
 
-use Ghostwriter\Arm\Interface\Git\WorkingDirectoryInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\Git\WorkingDirectoryInterface;
 use Override;
 
 final readonly class WorkingDirectory implements WorkingDirectoryInterface
