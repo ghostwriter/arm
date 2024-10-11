@@ -2,16 +2,18 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Arm\Task;
+namespace Ghostwriter\AutomatedRepositoryManager\Task;
 
-use Ghostwriter\Arm\Configuration\Process;
-use Ghostwriter\Arm\Interface\Task\Composer\ComposerDevPackageTaskInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\Task\Composer\ComposerDevPackageTaskInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\TaskProcessorInterface;
 use Override;
+use Symfony\Component\Process\Process;
 
 final readonly class UpdateComposerDevPackageVersion implements ComposerDevPackageTaskInterface
 {
     public function __construct(
-        private array $packages
+        private array $packages,
+        private TaskProcessorInterface $taskProcessor
     ) {
     }
 
