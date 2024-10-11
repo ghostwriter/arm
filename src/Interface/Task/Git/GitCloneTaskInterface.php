@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Arm\Interface\Task\Git;
+namespace Ghostwriter\AutomatedRepositoryManager\Interface\Task\Git;
 
-use Ghostwriter\Arm\Interface\Task\GitTaskInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\Task\GitTaskInterface;
 
 interface GitCloneTaskInterface extends GitTaskInterface
 {
