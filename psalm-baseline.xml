@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <files psalm-version="dev-master@03ee02ce6b43d1c7e52b9bb3ea0b49bfd02b08d0">
+  <file src="src/AutomatedRepositoryManager.php">
+    <UnusedClass>
+      <code><![CDATA[AutomatedRepositoryManager]]></code>
+    </UnusedClass>
+  </file>
   <file src="src/Configuration.php">
     <ArgumentTypeCoercion>
       <code><![CDATA[$owners]]></code>
