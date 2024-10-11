@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Arm\Configuration\List;
+namespace Ghostwriter\AutomatedRepositoryManager\Configuration\List;
 
-use Ghostwriter\Arm\Interface\ArrayableInterface;
-use Ghostwriter\Arm\Interface\TaskInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\ArrayableInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\TaskInterface;
 use Override;
 
 final class TaskList implements ArrayableInterface
