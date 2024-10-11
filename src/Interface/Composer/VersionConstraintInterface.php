@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Arm\Interface\Composer;
+namespace Ghostwriter\AutomatedRepositoryManager\Interface\Composer;
 
 interface VersionConstraintInterface
 {
