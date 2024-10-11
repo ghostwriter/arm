@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Arm\Task;
+namespace Ghostwriter\AutomatedRepositoryManager\Task;
 
-use Ghostwriter\Arm\Configuration\Process;
-use Ghostwriter\Arm\Interface\Task\Composer\ComposerPackageTaskInterface;
+use Ghostwriter\AutomatedRepositoryManager\Configuration\Process;
+use Ghostwriter\AutomatedRepositoryManager\Interface\Task\Composer\ComposerPackageTaskInterface;
 use Override;
 
 final readonly class UpdateComposerPackageVersion implements ComposerPackageTaskInterface
