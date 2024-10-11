@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Arm\Console;
+namespace Ghostwriter\AutomatedRepositoryManager\Console;
 
-use Ghostwriter\Arm\Configuration;
-use Ghostwriter\Arm\Configuration\Repository;
-use Ghostwriter\Arm\Service\ServiceProvider;
+use Ghostwriter\AutomatedRepositoryManager\Configuration;
+use Ghostwriter\AutomatedRepositoryManager\Configuration\Repository;
+use Ghostwriter\AutomatedRepositoryManager\Service\ServiceProvider;
 use Ghostwriter\Container\Container;
 
 use const PHP_EOL;
@@ -33,8 +33,13 @@ final readonly class Application
         return $container->get(self::class);
     }
 
-    public function run(): void
+    public function run(array $arguments): void
     {
+        [
+            $command,
+            $arguments,
+        ] = CliParser::new()->parse($arguments);
+
         $container = Container::getInstance();
         echo \sprintf('%s %s by %s and contributors.', $this->name, $this->version, $this->author), PHP_EOL, PHP_EOL;
 
