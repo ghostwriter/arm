@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Arm\Interface\GitHub;
+namespace Ghostwriter\AutomatedRepositoryManager\Interface\GitHub;
 
-use Ghostwriter\Arm\Interface\GitHub\Branch\BaseBranchInterface;
-use Ghostwriter\Arm\Interface\GitHub\Branch\HeadBranchInterface;
-use Ghostwriter\Arm\Interface\GitHub\PullRequest\BodyInterface;
-use Ghostwriter\Arm\Interface\GitHub\PullRequest\TitleInterface;
-use Ghostwriter\Arm\Interface\RepositoryInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\GitHub\Branch\BaseBranchInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\GitHub\Branch\HeadBranchInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\GitHub\PullRequest\BodyInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\GitHub\PullRequest\TitleInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\RepositoryInterface;
 
 interface PullRequestInterface
 {
