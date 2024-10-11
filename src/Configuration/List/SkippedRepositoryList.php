@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Arm\Configuration\List;
+namespace Ghostwriter\AutomatedRepositoryManager\Configuration\List;
 
-use Ghostwriter\Arm\Interface\ArrayableInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\ArrayableInterface;
 use Override;
 
 final class SkippedRepositoryList implements ArrayableInterface
