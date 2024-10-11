@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Arm\Interface\GitHub\Branch;
+namespace Ghostwriter\AutomatedRepositoryManager\Interface\GitHub\Branch;
 
-use Ghostwriter\Arm\Interface\GitHub\BranchInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\GitHub\BranchInterface;
 
 interface HeadBranchInterface extends BranchInterface
 {
