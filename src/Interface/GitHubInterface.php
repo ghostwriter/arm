@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Arm\Interface;
+namespace Ghostwriter\AutomatedRepositoryManager\Interface;
 
-use Ghostwriter\Arm\Tool\GitHubCli\RepositoryInterface;
+use Ghostwriter\AutomatedRepositoryManager\Tool\GitHubCli\RepositoryInterface;
 
 interface GitHubInterface
 {
