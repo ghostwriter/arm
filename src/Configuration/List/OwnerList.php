@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Arm\Configuration\List;
+namespace Ghostwriter\AutomatedRepositoryManager\Configuration\List;
 
-use Ghostwriter\Arm\Interface\ArrayableInterface;
-use Ghostwriter\Arm\Interface\GitHub\OwnerInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\ArrayableInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\GitHub\OwnerInterface;
 use Override;
 
 final class OwnerList implements ArrayableInterface
