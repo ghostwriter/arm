@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Arm\Interface;
+namespace Ghostwriter\AutomatedRepositoryManager\Interface;
 
 interface WorkspaceInterface extends StringableInterface
 {
