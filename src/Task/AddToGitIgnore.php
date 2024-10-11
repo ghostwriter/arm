@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Arm\Task;
+namespace Ghostwriter\AutomatedRepositoryManager\Task;
 
-use Ghostwriter\Arm\Interface\TaskInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\TaskInterface;
 
 final readonly class AddToGitIgnore implements TaskInterface
 {
