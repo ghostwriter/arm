@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Arm\Interface\Composer;
+namespace Ghostwriter\AutomatedRepositoryManager\Interface\Composer;
 
-use Ghostwriter\Arm\Interface\StringableInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\StringableInterface;
 
 interface NameInterface extends StringableInterface
 {
