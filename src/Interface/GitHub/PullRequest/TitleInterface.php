@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Arm\Interface\GitHub\PullRequest;
+namespace Ghostwriter\AutomatedRepositoryManager\Interface\GitHub\PullRequest;
 
-use Ghostwriter\Arm\Interface\StringableInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\StringableInterface;
 
 interface TitleInterface extends StringableInterface
 {
