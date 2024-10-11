@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Arm\Interface\Exception;
+namespace Ghostwriter\AutomatedRepositoryManager\Interface\Exception;
 
-use Ghostwriter\Arm\Interface\ExceptionInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\ExceptionInterface;
 
 interface InvalidArgumentExceptionInterface extends ExceptionInterface
 {
