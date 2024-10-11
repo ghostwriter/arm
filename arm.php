@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-use Ghostwriter\Arm\Configuration;
-use Ghostwriter\Arm\Task\AddToGitIgnore;
-use Ghostwriter\Arm\Task\RemoveDirectory;
-use Ghostwriter\Arm\Task\RemoveFile;
-use Ghostwriter\Arm\Task\ReplaceInFile;
-use Ghostwriter\Arm\Task\UpdateComposerDevPackageVersion;
-use Ghostwriter\Arm\Task\UpdateComposerPackageVersion;
-use Ghostwriter\Arm\Task\UpdateNpmPackageVersion;
+use Ghostwriter\AutomatedRepositoryManager\Configuration;
+use Ghostwriter\AutomatedRepositoryManager\Task\AddToGitIgnore;
+use Ghostwriter\AutomatedRepositoryManager\Task\RemoveDirectory;
+use Ghostwriter\AutomatedRepositoryManager\Task\RemoveFile;
+use Ghostwriter\AutomatedRepositoryManager\Task\ReplaceInFile;
+use Ghostwriter\AutomatedRepositoryManager\Task\UpdateComposerDevPackageVersion;
+use Ghostwriter\AutomatedRepositoryManager\Task\UpdateComposerPackageVersion;
+use Ghostwriter\AutomatedRepositoryManager\Task\UpdateNpmPackageVersion;
 
 return Configuration::new()
     ->owners('ActionableSteps', 'BMHVillage', 'codepoet', 'ghostwriter', 'laminas', 'mezzio', 'mockery', 'nathane')
