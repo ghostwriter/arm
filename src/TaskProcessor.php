@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Arm;
+namespace Ghostwriter\AutomatedRepositoryManager;
 
-use Ghostwriter\Arm\Interface\TaskInterface;
-use Ghostwriter\Arm\Interface\TaskProcessorInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\TaskInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\TaskProcessorInterface;
 use Ghostwriter\Container\List\Providers;
 use Override;
 
