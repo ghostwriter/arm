@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Arm\Service;
+namespace Ghostwriter\AutomatedRepositoryManager\Service;
 
-use Ghostwriter\Arm\Configuration;
-use Ghostwriter\Arm\Console\Application;
-use Ghostwriter\Arm\Interface\WorkspaceInterface;
-use Ghostwriter\Arm\Service\Factory\ApplicationFactory;
-use Ghostwriter\Arm\Service\Factory\ConfigurationFactory;
-use Ghostwriter\Arm\Service\Factory\WorkspaceFactory;
-use Ghostwriter\Arm\Workspace;
+use Ghostwriter\AutomatedRepositoryManager\Configuration;
+use Ghostwriter\AutomatedRepositoryManager\Console\Application;
+use Ghostwriter\AutomatedRepositoryManager\Interface\WorkspaceInterface;
+use Ghostwriter\AutomatedRepositoryManager\Service\Factory\ApplicationFactory;
+use Ghostwriter\AutomatedRepositoryManager\Service\Factory\ConfigurationFactory;
+use Ghostwriter\AutomatedRepositoryManager\Service\Factory\WorkspaceFactory;
+use Ghostwriter\AutomatedRepositoryManager\Workspace;
 use Ghostwriter\Container\Interface\ContainerInterface;
 use Ghostwriter\Container\Interface\ServiceProviderInterface;
 use Override;
