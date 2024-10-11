@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Arm\Service\Factory;
+namespace Ghostwriter\AutomatedRepositoryManager\Service\Factory;
 
-use Ghostwriter\Arm\Interface\WorkspaceInterface;
-use Ghostwriter\Arm\Workspace;
+use Ghostwriter\AutomatedRepositoryManager\Interface\WorkspaceInterface;
+use Ghostwriter\AutomatedRepositoryManager\Workspace;
 use Ghostwriter\Container\Interface\ContainerInterface;
 use Ghostwriter\Container\Interface\FactoryInterface;
 use Override;
