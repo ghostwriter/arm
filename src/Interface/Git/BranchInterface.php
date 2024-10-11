@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Arm\Interface\Git;
+namespace Ghostwriter\AutomatedRepositoryManager\Interface\Git;
 
-use Ghostwriter\Arm\Interface\StringableInterface;
-use Ghostwriter\Arm\Tool\GitHubCli\RepositoryInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\StringableInterface;
+use Ghostwriter\AutomatedRepositoryManager\Tool\GitHubCli\RepositoryInterface;
 
 interface BranchInterface extends StringableInterface
 {
