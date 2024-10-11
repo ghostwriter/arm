@@ -2,19 +2,19 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Arm\Interface\Git;
+namespace Ghostwriter\AutomatedRepositoryManager\Interface\Git;
 
-use Ghostwriter\Arm\Interface\Git\Commit\AuthorInterface;
-use Ghostwriter\Arm\Tool\GitHubCli\RepositoryInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\Git\Commit\AuthorInterface;
+use Ghostwriter\AutomatedRepositoryManager\Interface\RepositoryInterface;
 
 interface GitInterface
 {
     public static function new(WorkingDirectoryInterface $workingDirectory): self;
 
-    public function clone(RepositoryInterface $gitHubCliRepository): void;
+    public function clone(RepositoryInterface $interfaceRepository): void;
 
     public function commit(
-        RepositoryInterface $gitHubCliRepository,
+        RepositoryInterface $interfaceRepository,
         BranchInterface $branch,
         AuthorInterface $author,
         CommitInterface $commit,
